@@ -30,4 +30,4 @@ To run this project locally, follow these steps:
 - Ensure that XAMPP's Apache and MySQL services are running whenever you want to use the voting system locally.
 - Modify the database connection settings in the PHP files if necessary to match your local MySQL configuration.
 - Feel free to customize the HTML/CSS files to match your desired design preferences.
-- For any further assistance or issues, refer to the documentation of XAMPP or reach out for support.
+- Lastly, happy coding!
