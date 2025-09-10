@@ -1,4 +1,4 @@
-# Voting System using Plurality Algorithm
+# Votify - Voting System using Plurality Algorithm
 
 This project is a web-based voting system implemented using HTML/CSS for front-end design and PHP for back-end functionality. The system utilizes the Plurality Algorithm for counting votes.
 
