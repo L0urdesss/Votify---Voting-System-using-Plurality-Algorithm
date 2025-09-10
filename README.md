@@ -1,33 +1,48 @@
 # Votify - Voting System using Plurality Algorithm
 
-This project is a web-based voting system implemented using HTML/CSS for front-end design and PHP for back-end functionality. The system utilizes the Plurality Algorithm for counting votes.
+A simple **web-based voting system** built with **HTML/CSS** for the frontend and **PHP** for the backend.  
+The system uses the **Plurality Algorithm** to count votes.
 
-## Setup Instructions
+---
 
-To run this project locally, follow these steps:
+![Sample Screenshot](Sample.jpg)
 
-### 1. Install XAMPP:
-   - XAMPP is a free and open-source cross-platform web server solution stack package developed by Apache Friends, consisting mainly of the Apache HTTP Server, MariaDB database, and interpreters for scripts written in the PHP and Perl programming languages.
-   - Download and install XAMPP from [here](https://www.apachefriends.org/index.html).
-   
-### 2. Start Apache and MySQL:
-   - After installing XAMPP, start Apache and MySQL modules from the XAMPP Control Panel.
-   
-### 3. Import Database:
-   - Import the provided database into your MySQL server. You can do this via phpMyAdmin, which is included in XAMPP. Create a new database and import the provided SQL file into it.
+---
 
-### 4. Set Up IDE for HTML/CSS:
-   - Choose your preferred Integrated Development Environment (IDE) for HTML/CSS development. Popular choices include Visual Studio Code, Sublime Text, Atom, etc.
+## Features
+- User-friendly web interface for voting
+- Vote counting using the Plurality Algorithm
+- Admin panel for managing candidates and voters
+- MySQL database integration
+- Local deployment with XAMPP
 
-### 5. Folder Location:
-   - Place the project folder containing the HTML, CSS, and PHP files inside the 'htdocs' directory of your XAMPP installation. This is typically located at `C:\xampp\htdocs` on Windows or `/Applications/XAMPP/htdocs` on macOS.
+---
 
-### 6. Access the Website:
-   - Open a web browser and navigate to `http://localhost/your_project_folder_name` to access the voting system.
+## Installation & Setup
 
-## Additional Notes
+### 1. Install XAMPP
+Download and install [XAMPP](https://www.apachefriends.org/index.html), which includes:
+- Apache HTTP Server  
+- MariaDB (MySQL)  
+- PHP  
 
-- Ensure that XAMPP's Apache and MySQL services are running whenever you want to use the voting system locally.
-- Modify the database connection settings in the PHP files if necessary to match your local MySQL configuration.
-- Feel free to customize the HTML/CSS files to match your desired design preferences.
-- Lastly, happy coding!
+### 2. Start Apache & MySQL
+Launch **XAMPP Control Panel** and start **Apache** and **MySQL** modules.
+
+### 3. Import Database
+1. Open **phpMyAdmin** from the XAMPP Control Panel.  
+2. Create a new database (e.g., `votify_db`).  
+3. Import the provided `.sql` file into this database.
+
+### 4. Project Location
+Place the project folder inside the `htdocs` directory of your XAMPP installation:  
+- **Windows**: `C:\xampp\htdocs\your_project_folder`  
+- **macOS**: `/Applications/XAMPP/htdocs/your_project_folder`
+
+### 5. Configure Database Connection
+Open the project’s PHP config file (e.g., `config.php`) and update:
+```php
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "votify_db";
